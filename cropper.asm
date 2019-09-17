@@ -1,6 +1,3 @@
-#name: Bowen Li
-#studentID: 260787692
-
 .data
 
 #Must use accurate file path.
@@ -15,7 +12,6 @@ x2: .word 4
 y1: .word 5
 y2: .word 20
 headerbuff: .space 2048  #stores header
-#any extra .data you specify MUST be after this line 
 
 errorStatement: .asciiz "ERROR. Program is discontinued."
 tempbuff: .space 2048	# temporary buffer for integer versions of array
