@@ -1,6 +1,3 @@
-#name: Bowen Li
-#studentID: 260787692
-
 .data
 
 #Must use accurate file path.
@@ -10,8 +7,6 @@ input:	.asciiz "test1.txt"
 output:	.asciiz "transposed.pgm"	#used as output
 buffer:  .space 2048		# buffer for upto 2048 bytes
 newbuff: .space 2048
-
-#any extra data you specify MUST be after this line 
 
 tempbuff: .space 2048	# temporary buffer for integer versions of array
 temptransposedbuff: .space 2048	# temporary buffer for transposed array
