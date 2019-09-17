@@ -1,6 +1,3 @@
-#name: Bowen Li
-#studentID: 260787692
-
 .data
 
 #Must use accurate file path.
@@ -13,8 +10,6 @@ borderwidth: .word 2    #specifies border width
 buffer:  .space 2048		# buffer for upto 2048 bytes
 newbuff: .space 2048
 headerbuff: .space 2048  #stores header
-
-#any extra data you specify MUST be after this line 
 
 errorStatement: .asciiz "ERROR. Program is discontinued."
 tempbuff: .space 2048	# temporary buffer for integer versions of array
