@@ -54,8 +54,6 @@ readfile:	li $v0, 13	# system call for open file
 #Open the file to be read,using $a0
 #Conduct error check, to see if file exists
 
-# You will want to keep track of the file descriptor*
-
 # read from file
 # use correct file descriptor, and point to buffer
 # hardcode maximum number of chars to read
@@ -92,7 +90,7 @@ writefile:	li $v0, 13	# system call for open file
 		
 		jr $ra
 #open file to be written to, using $a0.
-#write the specified characters as seen on assignment PDF:
+#write the specified characters:
 #P2
 #24 7
 #15
