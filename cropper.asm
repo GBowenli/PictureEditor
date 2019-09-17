@@ -163,10 +163,6 @@ convert:	lb $t8, 0($s0)		# load a byte in tempbuff and store in t8 register
 #a3=y2
 #16($sp)=buffer
 #20($sp)=newbuffer that will be made
-#Remember to store ALL variables to the stack as you normally would,
-#before starting the routine.
-#Try to understand the math before coding!
-#There are more than 4 arguments, so use the stack accordingly.
 
 writefile:	move $t0, $a0	# save arguments
 		move $t1, $a1
@@ -304,9 +300,6 @@ continue:	li $s4, 32		# store space (ascii) in s4 register
 		lw $s2, 24($sp)
 
 		jr $ra
-#slightly different from Q1.
-#use as many arguments as you would like to get this to work.
-#make sure the header matches the new dimensions!
 
 error:  li $v0, 4	# system call for print string
 	la $a0, errorStatement
