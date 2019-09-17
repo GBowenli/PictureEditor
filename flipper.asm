@@ -1,6 +1,3 @@
-#name: Bowen Li
-#studentID: 260787692
-
 .data
 #Must use accurate file path.
 #file paths in MARS are relative to the mars.jar file.
@@ -10,8 +7,6 @@ output:	.asciiz "flipped.pgm"	#used as output
 axis: .word 0 # 0=flip around x-axis....1=flip around y-axis
 buffer:  .space 2048		# buffer for upto 2048 bytes
 newbuff: .space 2048
-
-#any extra data you specify MUST be after this line 
 
 tempbuff: .space 2048	# temporary buffer for integer versions of array
 tempflippedbuff: .space 2048	# temporary buffer for flipped array
