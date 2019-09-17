@@ -152,9 +152,6 @@ drawborder4:	sb $t3, 0($a1)		# store 15 (white) in tempborderbuffer
 #a0=buffer
 #a1=newbuff
 #a2=borderwidth
-#Can assume 24 by 7 as input
-#Try to understand the math before coding!
-#EXAMPLE: if borderwidth=2, 24 by 7 becomes 28 by 11.
 
 writefile:	move $t0, $a0	# save arguments
 		move $t1, $a1
@@ -282,9 +279,6 @@ continue:	li $s3, 10	# ascii for new line
 		syscall
 		
 		jr $ra
-#slightly different from Q1.
-#use as many arguments as you would like to get this to work.
-#make sure the header matches the new dimensions!
 
 error:  li $v0, 4	# system call for print string
 	la $a0, errorStatement
