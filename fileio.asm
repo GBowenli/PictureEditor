@@ -1,6 +1,3 @@
-#name: Bowen Li
-#studentID: 260787692
-
 .data
 
 #Must use accurate file path.
