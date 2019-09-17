@@ -173,8 +173,6 @@ yconvert:	lb $t2, 0($a0)	#invert the buffer by looping through each row and flip
 		bne $t0, $t1, yconvert	# continue looping if not all rows are filled
 			
 convertfinish:	jr $ra
-#Can assume 24 by 7 again for the input.txt file
-#Try to understand the math before coding!
 
 writefile:	move $t0, $a0	# save arguments
 		move $t1, $a1
@@ -244,9 +242,6 @@ loopend:	li $s0, 32	# store space (ascii) in s0 register
 		syscall
 		
 		jr $ra
-#slightly different from Q1.
-#use as many arguments as you would like to get this to work.
-#make sure the header matches the new dimensions!
 
 error:  li $v0, 4	# system call for print string
 	la $a0, errorStatement
